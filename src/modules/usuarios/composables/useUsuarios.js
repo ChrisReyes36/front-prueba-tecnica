@@ -91,7 +91,7 @@ export const useUsuarios = () => {
     usuarioForm.value.user_id = usuario.id
     usuarioForm.value.name = usuario.name
     usuarioForm.value.email = usuario.email
-    usuarioForm.value.rol_id = usuario.roles[0].id
+    usuarioForm.value.rol_id = usuario?.roles[0]?.id
     usuarioDialog.value = true
     submitted.value = false
   }
