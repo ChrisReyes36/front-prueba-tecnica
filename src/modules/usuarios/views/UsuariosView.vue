@@ -102,7 +102,7 @@ onMounted(async () => {
           >
             <template #body="slotProps">
               <span class="p-column-title">Rol</span>
-              {{ slotProps.data.roles[0].name }}
+              {{ slotProps.data.roles[0]?.name }}
             </template>
           </Column>
 
