@@ -29,8 +29,8 @@ export const useAuth = () => {
       })
       if (response?.data) {
         localStorage.setItem('token', response?.data?.access_token)
-        const user = await getUser()
-        localStorage.setItem('correo', user?.data?.email)
+        // const user = await getUser()
+        // localStorage.setItem('correo', user?.data?.email)
       }
       setTimeout(() => {
         router.push({ name: 'dashboard' })
